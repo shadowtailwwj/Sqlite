@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-Frame-Options" content="deny">
+<title>雨石配置综合管理平台</title>
+<link rel="stylesheet" type="text/css" href="HtmInc/Style/Config.css">
+<link rel="stylesheet" type="text/css" href="HtmInc/Style/Style.css">
+<script language="javascript" src="HtmInc/Js/Config.js?20190121"></script>
+<script language="javascript" src="HtmInc/Js/Js.js?20190121"></script>
+<script language="javascript" src="HtmInc/Js/Main.js?20190121"></script>
+</head>
+
+<body onload="Main.OnLoad();" onresize="Main.Page.OnResize();">
+<!--顶上菜单-->
+<div id="BigMenu" class="TopMenu noselect">
+<ul>
+<li class="Off" style="margin-left: 20px;" onclick="Main.Menu.BigClick(this);">Home</li>
+<li class="Off" onclick="Main.Menu.BigClick(this);">YsEIP</li>
+<li class="Off" onclick="Main.Menu.BigClick(this);">YsAdmin</li>
+<li class="Off" onclick="Main.Menu.BigClick(this);">Tools</li>
+<li class="User">User(loginid) <input type="button" value="Logout"></li>
+</ul>
+</div>
+
+<!--左边菜单-->
+<div class="LeftMenu noselect">
+<ul><li>
+<div id="SmallMenu">
+<ul bigmenu="0" menuid="100100" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>首页</li></ul>
+<ul bigmenu="0" menuid="100200" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>导出配置</li></ul>
+<ul bigmenu="0" menuid="100300" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>导出数据库</li></ul>
+<ul bigmenu="0" menuid="100400" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>系统管理</li></ul>
+<ul bigmenu="1" menuid="200100" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>数据表</li></ul>
+<ul bigmenu="1" menuid="200200" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>目录管理</li></ul>
+<ul bigmenu="1" menuid="200300" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>页面管理</li></ul>
+<ul bigmenu="1" menuid="200400" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>模块管理</li></ul>
+<ul bigmenu="1" menuid="200500" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>枚举管理</li></ul>
+<ul bigmenu="1" menuid="200600" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>工作流管理</li></ul>
+<ul bigmenu="1" menuid="200700" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>参数管理</li></ul>
+<ul bigmenu="1" menuid="200800" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>提醒管理</li></ul>
+<ul bigmenu="1" menuid="200900" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>接口管理</li></ul>
+<ul bigmenu="1" menuid="201000" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>工作流模板</li></ul>
+<ul bigmenu="2" menuid="300100" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>数据表</li></ul>
+<ul bigmenu="2" menuid="300200" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>目录管理</li></ul>
+<ul bigmenu="2" menuid="300300" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>列表页管理</li></ul>
+<ul bigmenu="2" menuid="300400" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>编辑页管理</li></ul>
+<ul bigmenu="2" menuid="300500" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>枚举管理</li></ul>
+<ul bigmenu="2" menuid="300600" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>参数管理</li></ul>
+<ul bigmenu="2" menuid="300700" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>提醒管理</li></ul>
+<ul bigmenu="2" menuid="300800" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>接口管理</li></ul>
+<ul bigmenu="3" menuid="400100" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>Escape处理</li></ul>
+<ul bigmenu="3" menuid="400200" onclick="Main.Menu.SmallClick(this);" style="display: none;"><li>Md5处理</li></ul>
+</div>
+</li></ul>
+</div>
+
+<div id="InfoMsg" class="Info">
+
+<ul id="InfoMsg_1" class="InfoUl" style="display: none;"></ul>
+
+<ul id="InfoMsg_2" class="InfoUl" style="display: none;"></ul>
+
+<ul id="InfoMsg_3" class="InfoUl" style="display: none;"></ul>
+
+</div>
+
+
+<div id="WinInfoMsg" class="WinInfo" style="display: none;">
+<ul class="title"><li class="title">标题</li><li class="addclose" style="margin-right: 10px;" title="关闭窗口" onClick="Main.Page.CloseWin(this);">X</li><li class="addclose" title="填写说明">?</li><li class="addclose" style="display: none;" title="增加行">+</li></ul>
+<ul class="Info"><li style=""></li></ul>
+<ul class="Sub"><li><input type="button" name="" value="确认" onclick="Main.Page.SaveWin(this);"><input type="button" name="" value="取消" onClick="Main.Page.CloseWin(this);"></li></ul>
+</div>
+
+
+</body>
+</html>

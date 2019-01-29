@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*顶上菜单*/
+div.TopMenu{float: left; width: 100%; height: 100%;}
+div.TopMenu>ul{height: 80px; background-color: #0056a4; font-size: 18px; font-weight: bold;  color: #FFFFFF;}
+div.TopMenu>ul>li{float: left; width: 150px; text-align: center; line-height: 80px; margin-left: 1px;}
+div.TopMenu>ul>li.Off:hover{background-color: #1269b8;}
+div.TopMenu>ul>li.On{background-color: #1269b8;}
+
+div.TopMenu>ul>li.User{float: right; width: 500px; color: #d4eafe; font-size: 16px; font-weight:normal; text-align: right; padding-right: 15px;}
+div.TopMenu>ul>li.User>input{background-color: #d4eafe; color: #454545; letter-spacing: 0px; border-radius: 3px; margin-left: 10px;}
+
+
+/*左边菜单*/
+div.LeftMenu{ position: fixed; width: 200px; height: 100%; background-color: #f4f4f4; border-right: #d1d1d1 1px solid; box-sizing:border-box; border-bottom:#FFFFFF 80px solid; margin-top: 80px; cursor: default;}
+div.LeftMenu>ul{width: 198px; height: 100%; border-right: #FFFFFF 1px solid;}
+div.LeftMenu>ul>li{ height: 100%; overflow: auto;}
+
+div.LeftMenu>ul>li>div{margin: 10px 8px 8px 10px;}
+div.LeftMenu>ul>li>div>ul{ height: 45px; border-bottom: #d1d1d1 1px solid;}
+div.LeftMenu>ul>li>div>ul>li{ height: 43px; border-bottom: #FFFFFF 1px solid; color: #454545;font-weight: bold; font-size: 16px; line-height: 43px;  padding-left: 15px; text-align: left; }
+div.LeftMenu>ul>li>div>ul:hover>li{ color: #0056a4; }
+div.LeftMenu>ul>li>div>ul.On>li{ color: #0056a4; }
+
+
+/*内容部分*/
+div.Info{position: fixed; width: 100%; height: 100%;box-sizing:border-box; border-bottom:#FFFFFF 100px solid; border-right: #FFFFFF 220px solid; margin: 90px 0 0 210px; font-size:14px; color: #454545;}
+div.Info>ul.InfoUl{float: left; border-bottom: #d1d1d1 1px solid; border-top: #FFFFFF 1px solid;}
+div.Info>ul.InfoUl>li{float: left; width: 100%; line-height: 30px;}
+div.Info>ul.InfoUl>li.InfoTitle{ width:auto; height: 55px; line-height: 55px; padding-left: 10px; font-size: 16px; }
+div.Info>ul.InfoUl>li.InfoSearch{ float: right; width: auto; height: 55px; line-height: 55px; padding-right: 10px; }
+div.Info>ul.InfoUl>li.InfoMenu{float: left; text-align: left; overflow-x:hidden; overflow-y: scroll; height: 30px; }
+div.Info>ul.InfoUl>li.InfoMenu>div{float: left;border-top: #d7d7d7 1px solid;border-left: #d7d7d7 1px solid; height: 28px;}
+div.Info>ul.InfoUl>li.InfoMenu>div>ul{height: 27px; line-height: 27px;}
+div.Info>ul.InfoUl>li.InfoMenu>div>ul>li{ float: left; height: 27px; line-height: 27px; border-right: #d7d7d7 1px solid;border-bottom: #d7d7d7 1px solid; background-color: #f5f5f5; text-align: center;}
+div.Info>ul.InfoUl>li.InfoContent{float: left; text-align: left; overflow-x:auto; overflow-y: scroll;}
+div.Info>ul.InfoUl>li.InfoContent>div{float: left; border-left: #d7d7d7 1px solid;}
+div.Info>ul.InfoUl>li.InfoContent>div>ul{height: 30px;line-height: 30px;}
+div.Info>ul.InfoUl>li.InfoContent>div>ul>li{ float: left;height: 30px; line-height: 30px; border-right: #d7d7d7 1px solid;border-bottom: #d7d7d7 1px solid; text-align: center;}
+div.Info>ul.InfoUl>li.InfoContent>div>ul>li>input{float: left; height: 26px; line-height: 26px; border-top: 0;border-left: 0;border-right: 0;}
+div.Info>ul.InfoUl>li.InfoContent>div>ul>li>input.Sub{background-color: #d4eafe; color: #454545; letter-spacing: 0px; border-radius: 3px; height: 23px; line-height: 23px; font-size: 14px; padding: 0 8px 0 8px; margin: 3px 3px 0 3px;}
+div.Info>ul.InfoUl>li.InfoContent>div>ul>li>div{float: left;  width: 15px; height: 15px; border: #d7d7d7 1px solid; background-color: #f5f5f5; text-align: center; line-height: 15px; font-size: 10px; margin: 10px 0 0 5px; cursor: pointer;}
+
+/*弹窗*/
+div.WinInfo{ position: absolute; top: 50%; left: 50%; cursor: default; background-color: #f5f5f5; border: #d7d7d7 1px solid;border-radius: 3px;}
+div.WinInfo>ul{float: left; line-height: 30px;}
+div.WinInfo>ul>li{float: left; height: 100%;line-height: 30px;}
+
+div.WinInfo>ul.title{border-bottom: #d7d7d7 1px solid;}
+div.WinInfo>ul.title>li.title{padding-left:10px;}
+div.WinInfo>ul.title>li.addclose{float: right; cursor: pointer; width: 15px; height: 15px; border: #d7d7d7 1px solid; background-color: #f5f5f5; text-align: center; line-height: 15px; font-size: 10px; margin: 10px 5px 0 0;}
+div.WinInfo>ul.title>li.addclose:hover{color: red;}
+
+div.WinInfo>ul.Info>li{  padding: 5px; }
+div.WinInfo>ul.Info>li>textarea{width: 100%; height: 100%;}
+
+div.WinInfo>ul.Sub>li{ text-align: center; width: 100%; }
+div.WinInfo>ul.Sub>li>input{background-color: #d4eafe; color: #454545; letter-spacing: 0px; border-radius: 3px; height: 23px; line-height: 23px; font-size: 14px; padding: 0 8px 0 8px; margin: 3px 3px 0 3px;}
+
+
